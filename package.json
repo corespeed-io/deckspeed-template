@@ -1,0 +1,47 @@
+{
+  "name": "@deckspeed/template-private",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "copy-mathjax": "node scripts/copy-mathjax.mjs",
+    "dev": "node scripts/copy-mathjax.mjs && vite --port 3000",
+    "start": "node scripts/copy-mathjax.mjs && vite --port 3000",
+    "build": "node scripts/copy-mathjax.mjs && vite build && tsc",
+    "serve": "vite preview",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@deckspeed/deck-renderer": "workspace:*",
+    "@deckspeed/deck-schema": "workspace:*",
+    "@react-three/fiber": "^9.1.2",
+    "@tailwindcss/vite": "^4.1.6",
+    "@tanstack/react-router": "^1.120.3",
+    "@tanstack/react-table": "^8.21.3",
+    "chart.js": "^4.4.9",
+    "mathjax": "^3.2.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.6",
+    "three": "^0.176.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/mathjax": "^0.0.40",
+    "@types/node": "^22.15.18",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "@types/three": "^0.176.0",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.26.0",
+    "eslint-plugin-react": "^7.37.5",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^8.0.10"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

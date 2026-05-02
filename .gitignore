@@ -1,0 +1,16 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+
+# Deckspeed-managed (excluded from .deck archives)
+.deckspeed/uploads/
+.deckspeed/uploads-cache/
+.deckspeed/py-extras/
+__pycache__/
+*.pyc
+
+# Vendored MathJax assets — copied at build time from node_modules/mathjax/es5
+# (see scripts/copy-mathjax.mjs at repo root). Required by deck-renderer MathNode.
+public/assets/vendor/mathjax/
