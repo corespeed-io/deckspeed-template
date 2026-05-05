@@ -1,0 +1,22 @@
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  [data-paper],
+  [data-paper] * {
+    visibility: visible;
+  }
+
+  [data-paper] {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: none !important;
+    box-shadow: none !important;
+    --tw-shadow: none !important;
+    --tw-shadow-colored: none !important;
+  }
+}

@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Workspace deck-renderer source: HeadingNode/TextNode reference Tailwind
+ * classes (text-6xl, text-4xl, font-bold, …) that the v4 JIT must scan.
+ * Without this @source the sandbox preview bundle omits those utilities
+ * and headings collapse to the preflight `font-size: inherit` reset. */
+@source '../../packages/deck-renderer/src';
+
+body {
+  @apply m-0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Courier New",
+    monospace;
+}
